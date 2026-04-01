@@ -3,6 +3,7 @@ import Obras from '@/components/paginas/obras/Obras';
 import Servicios from '@/components/paginas/servicios/Servicios';
 import TecnicasConstructivas from '@/components/paginas/tecnicas-constructivas/TecnicasConstructivas';
 import Contacto from '@/components/paginas/contacto/Contacto';
+import { Nosotros } from '@/components/paginas/nosotros/Nosotros';
 
 export default function Home() {
   return (
@@ -12,6 +13,9 @@ export default function Home() {
         <HomePage />
       </div>
       <hr />
+      <div id='nosotros'>
+        <Nosotros />
+      </div>
       <div id='obras'>
         <Obras />
       </div>

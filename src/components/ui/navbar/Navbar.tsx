@@ -12,6 +12,10 @@ const paginas = [
     href: '#obras',
   },
   {
+    nombre: 'Nosotros',
+    href: '#nosotros',
+  },
+  {
     nombre: 'Técnicas constructivas',
     href: '#tecnicas-constructivas',
   },
