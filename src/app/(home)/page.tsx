@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <div className='flex flex-col'>
       <hr />
-      <div>
+      <div className=''>
         <HomePage />
       </div>
       <hr />
