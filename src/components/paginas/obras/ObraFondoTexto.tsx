@@ -7,7 +7,13 @@ const images = [
   '/techoCasa.jpeg',
 ];
 
-export const ObraFondoTexto = () => {
+interface ObraFondoTextoProps {
+  ubicacion: string;
+}
+
+export const ObraFondoTexto = ({
+  ubicacion,
+}: ObraFondoTextoProps) => {
   return (
     <div className='relative h-[60vh] w-full bg-black overflow-hidden '>
       {/* Fondo */}
@@ -51,7 +57,9 @@ export const ObraFondoTexto = () => {
       <div className='absolute inset-0 bg-black/30' />
 
       {/* Texto */}
-      <div className='relative z-10 flex h-full items-center justify-end p-6'>
+      <div
+        className={`relative z-10 flex h-full items-center justify-${ubicacion} p-6`}
+      >
         <div className='max-w-sm text-white'>
           <h2 className='text-2xl md:text-3xl font-bold'>Título</h2>
           <p>
