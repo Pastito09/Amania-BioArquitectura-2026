@@ -8,9 +8,9 @@ export const Obras = () => {
         <h1 className='text-4xl text-center text-gray-800 font-bold'>
           Obras:
         </h1>
-        <ObraFondoTexto ubicacion='end' />
-        <ObraFondoTexto ubicacion='start' />
-        <ObraFondoTexto ubicacion='end' />
+        <ObraFondoTexto ubicacion='end' key={1} />
+        <ObraFondoTexto ubicacion='start' key={2} />
+        <ObraFondoTexto ubicacion='end' key={3} />
         {/* <ObraCard />
 
         <ObraCard />
