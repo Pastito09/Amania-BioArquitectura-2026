@@ -15,7 +15,7 @@ export const ObraFondoTexto = ({
   ubicacion,
 }: ObraFondoTextoProps) => {
   return (
-    <div className='relative h-[60vh] w-full bg-black overflow-hidden '>
+    <div className='relative h-[50vh] w-full bg-black overflow-hidden '>
       {/* Fondo */}
       {/* 📱 MOBILE: solo 1 imagen */}
       <div className='absolute inset-0 block md:hidden'>

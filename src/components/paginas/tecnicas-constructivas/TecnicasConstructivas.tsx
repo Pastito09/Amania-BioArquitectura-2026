@@ -12,10 +12,6 @@ export const TecnicasConstructivas = () => {
         <TecnicaCard />
         <hr />
         <TecnicaCard />
-        <hr />
-        <TecnicaCard />
-        <hr />
-        <TecnicaCard />
       </div>
     </>
   );
