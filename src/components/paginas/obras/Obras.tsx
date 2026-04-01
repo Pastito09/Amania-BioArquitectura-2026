@@ -1,7 +1,6 @@
 import { ObraSwiper } from './obra-slider/obra-swiper/ObraSwiper';
-import ObraCard from './ObraCard';
+
 import { ObraFondoTexto } from './ObraFondoTexto';
-import { SwiperSlide } from 'swiper/react';
 
 export const Obras = () => {
   return (
@@ -17,15 +16,6 @@ export const Obras = () => {
             <ObraFondoTexto />
           </ObraSwiper>
         </div>
-        {/* <ObraFondoTexto ubicacion='end' key={1} /> */}
-
-        {/* <ObraFondoTexto ubicacion='start' key={2} /> */}
-        {/* <ObraFondoTexto ubicacion='end' key={3} /> */}
-        {/* <ObraCard />
-
-        <ObraCard />
-        <ObraCard />
-        <ObraCard /> */}
       </div>
     </>
   );

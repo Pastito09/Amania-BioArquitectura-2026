@@ -21,7 +21,7 @@ export default function Home() {
       <div id='tecnicas-constructivas'>
         <TecnicasConstructivas />
       </div>
-      <div id='servicios'>
+      <div id='servicios' className='p-1'>
         <Servicios />
       </div>
       <div id='contacto'>
