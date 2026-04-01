@@ -9,19 +9,19 @@ import { useNavbarStore } from '@/store/navbar-store';
 const paginas = [
   {
     nombre: 'Obras',
-    href: '/obras',
+    href: '#obras',
   },
   {
     nombre: 'Técnicas constructivas',
-    href: '/tecnicas-constructivas',
+    href: '#tecnicas-constructivas',
   },
   {
     nombre: 'Servicios',
-    href: '/servicios',
+    href: '#servicios',
   },
   {
     nombre: 'Contacto',
-    href: '/contacto',
+    href: '#contacto',
   },
 ];
 

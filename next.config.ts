@@ -9,7 +9,7 @@ const nextConfig: NextConfig = {
 
 module.exports = {
   images: {
-    qualities: [25, 50, 75],
+    qualities: [25, 50, 75, 100],
   },
 }
 export default nextConfig;

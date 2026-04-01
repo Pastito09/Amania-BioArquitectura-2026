@@ -4,14 +4,14 @@ import Link from 'next/link';
 
 export const ObraCard = () => {
   return (
-    <div className='grid grid-cols-1 md:grid-cols-2 rounded-sm '>
-      <div className='mb-2 overflow:hidden flex  justify-center md:justify-normal col-span-1 '>
+    <div className='grid grid-cols-2 rounded-sm'>
+      <div className='mb-2 flex col-span-1 '>
         <Image
           src={'/techoCasa2.jpeg'}
           alt=''
           height={100}
           width={500}
-          className='object-contain rounded-lg mt-0 ms-0 md:mt-2 md:ms-2 flex-none'
+          className='object-contain  w-[75%] rounded-lg mt-0 ms-0 md:mt-2 md:ms-2 flex-none'
         />
       </div>
       <div className='mx-5 my-auto mt-8 flex-col text-sm col-span-1 text-gray-600 text-wrap'>
