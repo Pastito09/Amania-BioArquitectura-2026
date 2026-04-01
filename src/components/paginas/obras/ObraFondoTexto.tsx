@@ -1,3 +1,4 @@
+import clsx from 'clsx';
 import Image from 'next/image';
 
 const images = [
@@ -58,7 +59,13 @@ export const ObraFondoTexto = ({
 
       {/* Texto */}
       <div
-        className={`relative z-10 flex h-full items-center justify-${ubicacion} p-6`}
+        className={clsx(
+          'relative z-10 flex h-full items-center p-6',
+          {
+            'justify-end': ubicacion === 'end',
+            'justify-start': ubicacion === 'start',
+          },
+        )}
       >
         <div className='max-w-sm text-white'>
           <h2 className='text-2xl md:text-3xl font-bold'>Título</h2>
