@@ -60,7 +60,7 @@ export const Navbar = () => {
 
   return (
     <div
-      className={`bg-gray-800 fixed top-0 left-0 right-0 z-50 shadow-md transition-transform duration-300 ${
+      className={`bg-gray-700 fixed top-0 left-0 right-0 z-50 shadow-md transition-transform duration-300 ${
         scrollDirection === 'down'
           ? '-translate-y-full'
           : 'translate-y-0'
@@ -84,7 +84,7 @@ export const Navbar = () => {
             <div className='hidden md:block' key={`${id}-${nombre}`}>
               <Link
                 href={href}
-                className='text-lg font-medium antialised text-gray-300 hover:text-gray-400'
+                className='text-lg font-medium antialised text-gray-200 hover:text-gray-300'
               >
                 {nombre}
               </Link>

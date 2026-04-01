@@ -89,8 +89,9 @@
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
+import 'swiper/css/effect-fade';
 import Image from 'next/image';
-import { Autoplay } from 'swiper/modules';
+import { Autoplay, EffectFade } from 'swiper/modules';
 
 const slides = [
   {
@@ -116,14 +117,13 @@ export const HomePage = () => {
       <Swiper
         autoplay={{
           delay: 5500,
+          disableOnInteraction: false,
         }}
-        speed={1000}
+        speed={2000}
+        effect='fade'
         loop
-        style={{
-          width: '100wh',
-          // height: '800px',
-        }}
-        modules={[Autoplay]}
+        fadeEffect={{ crossFade: true }}
+        modules={[Autoplay, EffectFade]}
         className='w-full h-full swiper-custom'
       >
         {slides.map((slide, i) => (
@@ -134,12 +134,12 @@ export const HomePage = () => {
                 src={slide.img}
                 alt={slide.title}
                 fill
-                className='object-fill'
+                className='object-contain'
                 priority={i === 0}
               />
 
               {/* Overlay oscuro */}
-              <div className='absolute inset-0 bg-black/40 z-10' />
+              <div className='absolute inset-0 bg-black/10 rounded-md z-10' />
 
               {/* Texto */}
               <div className='absolute inset-0 z-20 flex flex-col items-center justify-center text-center text-white px-4 mb-48'>

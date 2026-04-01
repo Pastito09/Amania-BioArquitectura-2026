@@ -8,11 +8,10 @@ import { Nosotros } from '@/components/paginas/nosotros/Nosotros';
 export default function Home() {
   return (
     <div className='flex flex-col'>
-      <hr />
       <div className=''>
         <HomePage />
       </div>
-      <hr />
+
       <div id='nosotros'>
         <Nosotros />
       </div>
