@@ -45,7 +45,7 @@ export const Contacto = () => {
 
   return (
     <div
-      className='flex w-full justify-center text-center text-sm md:text-xs bg-gray-800 mt-auto pb-1'
+      className='flex flex-col-reverse p-1 md:p-0 md:flex-row w-full justify-center text-center bg-gray-800 mt-auto md:pb-1'
       onClick={closeMenu}
     >
       <div className='w-full h-full p-1'>
