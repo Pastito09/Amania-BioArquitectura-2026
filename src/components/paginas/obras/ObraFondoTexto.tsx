@@ -8,22 +8,13 @@ const images = [
   '/techoCasa.jpeg',
 ];
 
-interface ObraFondoTextoProps {
-  ubicacion: string;
-}
-
-export const ObraFondoTexto = ({
-  ubicacion,
-}: ObraFondoTextoProps) => {
+export const ObraFondoTexto = () => {
   return (
-    <div className='relative h-[50vh] w-full bg-black overflow-hidden '>
-      {/* Fondo */}
-      {/* 📱 MOBILE: solo 1 imagen */}
+    <div className='relative h-full w-full bg-black overflow-hidden '>
       <div className='absolute inset-0 block md:hidden'>
         <Image src={images[0]} alt='' fill className='object-cover' />
       </div>
 
-      {/* 💻 DESKTOP: 3 imágenes */}
       <div className='absolute inset-0 hidden md:grid md:grid-cols-3'>
         <div className='relative'>
           <Image
@@ -58,15 +49,7 @@ export const ObraFondoTexto = ({
       <div className='absolute inset-0 bg-black/30' />
 
       {/* Texto */}
-      <div
-        className={clsx(
-          'relative z-10 flex h-full items-center p-6',
-          {
-            'justify-end': ubicacion === 'end',
-            'justify-start': ubicacion === 'start',
-          },
-        )}
-      >
+      <div className='relative z-10 flex h-full items-center p-6 justify-end'>
         <div className='max-w-sm text-white'>
           <h2 className='text-2xl md:text-3xl font-bold'>Título</h2>
           <p>

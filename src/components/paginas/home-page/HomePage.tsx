@@ -105,7 +105,7 @@ const slides = [
     desc: 'Ambientes cálidos y funcionales',
   },
   {
-    img: '/mesaYTecho.png',
+    img: '/techoCasa.jpeg',
     title: 'Arquitectura Natural',
     desc: 'Materiales nobles y técnicas modernas',
   },
@@ -128,13 +128,14 @@ export const HomePage = () => {
       >
         {slides.map((slide, i) => (
           <SwiperSlide key={i}>
-            <div className='relative w-full h-screen'>
+            <div className='relative w-full h-full'>
               {/* Imagen de fondo */}
               <Image
                 src={slide.img}
                 alt={slide.title}
                 fill
-                className='object-contain'
+                quality={100}
+                className='object-cover'
                 priority={i === 0}
               />
 
