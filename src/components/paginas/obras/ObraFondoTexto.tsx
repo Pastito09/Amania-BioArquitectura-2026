@@ -1,11 +1,10 @@
-import clsx from 'clsx';
 import Image from 'next/image';
 
 const images = [
   '/techoCasa2.jpeg',
-  '/interiorCasa.jpeg',
-  '/mesaYTecho.png',
-  '/techoCasa.jpeg',
+  '/obras/Obras1.jpeg',
+  '/obras/Obras2.jpeg',
+  '/obras/Obras3.jpeg',
 ];
 
 export const ObraFondoTexto = () => {

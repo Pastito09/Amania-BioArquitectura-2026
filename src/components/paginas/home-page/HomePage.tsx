@@ -100,12 +100,12 @@ const slides = [
     desc: 'Diseñamos espacios eficientes y ecológicos',
   },
   {
-    img: '/interiorCasa.jpeg',
+    img: '/obras/Obras4.jpeg',
     title: 'Diseño Interior',
     desc: 'Ambientes cálidos y funcionales',
   },
   {
-    img: '/techoCasa.jpeg',
+    img: '/obras/Obras5.jpeg',
     title: 'Arquitectura Natural',
     desc: 'Materiales nobles y técnicas modernas',
   },
