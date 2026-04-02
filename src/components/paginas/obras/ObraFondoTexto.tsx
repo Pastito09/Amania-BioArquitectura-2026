@@ -11,13 +11,13 @@ export const ObraFondoTexto = () => {
   return (
     <div className='relative h-full w-full bg-black overflow-hidden '>
       <div className='absolute inset-0 block md:hidden'>
-        <Image src={images[0]} alt='' fill className='object-cover' />
+        <Image src={images[3]} alt='' fill className='object-cover' />
       </div>
 
       <div className='absolute inset-0 hidden md:grid md:grid-cols-3'>
         <div className='relative'>
           <Image
-            src={images[0]}
+            src={images[3]}
             alt=''
             fill
             className='object-cover'
@@ -36,7 +36,7 @@ export const ObraFondoTexto = () => {
 
         <div className='relative'>
           <Image
-            src={images[3]}
+            src={images[2]}
             alt=''
             fill
             className='object-cover'

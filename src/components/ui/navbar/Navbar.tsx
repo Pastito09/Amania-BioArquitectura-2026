@@ -58,6 +58,33 @@ export const Navbar = () => {
     }
   }, [lastScrollY, controlNavbar]);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = document.querySelectorAll('section[id]');
+      let isInsideSection = false;
+
+      sections.forEach((section) => {
+        const rect = section.getBoundingClientRect();
+
+        // 👇 detecta si la sección está en el centro de la pantalla
+        if (
+          rect.top <= window.innerHeight / 2 &&
+          rect.bottom >= window.innerHeight / 2
+        ) {
+          isInsideSection = true;
+        }
+      });
+
+      // 👇 si no estás en ninguna sección "principal"
+      if (!isInsideSection) {
+        window.history.replaceState(null, '', '/');
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
     <div
       className={`bg-gray-700 fixed top-0 left-0 right-0 z-50 shadow-md transition-transform duration-300 ${
@@ -85,6 +112,14 @@ export const Navbar = () => {
               <Link
                 href={href}
                 className='text-lg font-medium antialised text-gray-200 hover:text-gray-300'
+                onClick={(e) => {
+                  e.preventDefault();
+                  closeMenu();
+
+                  setTimeout(() => {
+                    window.location.hash = href;
+                  }, 0);
+                }}
               >
                 {nombre}
               </Link>
