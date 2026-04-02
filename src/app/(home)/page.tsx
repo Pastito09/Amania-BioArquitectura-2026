@@ -15,15 +15,16 @@ export default function Home() {
       <div id='nosotros'>
         <Nosotros />
       </div>
+      <div id='servicios' className='p-1 mt-2'>
+        <Servicios />
+      </div>
       <div id='obras'>
         <Obras />
       </div>
       <div id='tecnicas-constructivas'>
         <TecnicasConstructivas />
       </div>
-      <div id='servicios' className='p-1'>
-        <Servicios />
-      </div>
+
       <div id='contacto'>
         <Contacto />
       </div>

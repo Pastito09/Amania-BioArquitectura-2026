@@ -45,7 +45,7 @@ export const Contacto = () => {
 
   return (
     <div
-      className='flex flex-col-reverse p-1 md:p-0 md:flex-row w-full justify-center text-center bg-gray-800 mt-auto md:pb-1'
+      className='flex flex-col-reverse p-1 md:p-0 md:flex-row w-full justify-center text-center bg-gray-200/50 mt-auto md:pb-1'
       onClick={closeMenu}
     >
       <div className='w-full h-full p-1'>
@@ -77,12 +77,14 @@ export const Contacto = () => {
             <div className='flex justify-center' key={href}>
               <Link
                 href={href}
-                className='flex gap-2 m-1 text-gray-300 hover:text-gray-400'
+                className='flex flex-col md:flex-row items-center gap-2 m-1 text-gray-700/75 hover:text-gray-700'
                 target='_blank'
                 rel='noopener noreferrer'
               >
                 {io}
-                <span className='text-xl mt-1'>{title}</span>
+                <span className='text-xl mt-1 break-all  text-center'>
+                  {title}
+                </span>
               </Link>
             </div>
           ))}

@@ -87,7 +87,7 @@ export const Navbar = () => {
 
   return (
     <div
-      className={`bg-gray-700 fixed top-0 left-0 right-0 z-50 shadow-md transition-transform duration-300 ${
+      className={`bg-gray-100/90 fixed top-0 left-0 right-0 z-50 shadow-md transition-transform duration-300 ${
         scrollDirection === 'down'
           ? '-translate-y-full'
           : 'translate-y-0'
@@ -111,7 +111,7 @@ export const Navbar = () => {
             <div className='hidden md:block' key={`${id}-${nombre}`}>
               <Link
                 href={href}
-                className='text-lg font-medium antialised text-gray-200 hover:text-gray-300'
+                className='text-lg font-medium antialised text-gray-700/75 hover:text-gray-700'
                 onClick={(e) => {
                   e.preventDefault();
                   closeMenu();
@@ -130,13 +130,13 @@ export const Navbar = () => {
           <button className='block md:hidden' onClick={toggleMenu}>
             <IoMenu
               size={25}
-              className='text-gray-300 hover:text-gray-400'
+              className='text-gray-600/75 hover:text-gray-700'
             />
           </button>
           <Link href={'/'} className='hidden md:block'>
             <IoHomeOutline
               size={25}
-              className='text-gray-300 hover:text-gray-400'
+              className='text-gray-600/75 hover:text-gray-700'
             />
           </Link>
         </div>

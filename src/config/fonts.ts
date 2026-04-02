@@ -1,16 +1,12 @@
 import {
-  Comfortaa,
+  Montserrat as MontserratFont,
   Inter,
-  Montserrat_Alternates,
 } from 'next/font/google';
 
 export const inter = Inter({ subsets: ['latin'] });
 
-export const titleFont = Montserrat_Alternates({
+export const montserrat = MontserratFont({
+  variable: '--font-montserrat',
   subsets: ['latin'],
-  weight: ['500', '700'],
-});
-export const regularFont = Comfortaa({
-  subsets: ['latin'],
-  weight: ['300', '500'],
+  weight: ['300', '400', '500', '600', '700'],
 });

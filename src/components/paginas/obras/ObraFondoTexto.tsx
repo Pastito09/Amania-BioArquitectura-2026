@@ -7,17 +7,34 @@ const images = [
   '/obras/Obras3.jpeg',
 ];
 
-export const ObraFondoTexto = () => {
+interface ObraFondoTextoProps {
+  title: string;
+  description: string;
+  imagenes: string[];
+  href?: string;
+}
+
+export const ObraFondoTexto = ({
+  title,
+  description,
+  imagenes,
+  href,
+}: ObraFondoTextoProps) => {
   return (
-    <div className='relative h-full w-full bg-black overflow-hidden '>
+    <div className='relative h-full w-full overflow-hidden '>
       <div className='absolute inset-0 block md:hidden'>
-        <Image src={images[3]} alt='' fill className='object-cover' />
+        <Image
+          src={imagenes[0]}
+          alt=''
+          fill
+          className='object-cover'
+        />
       </div>
 
-      <div className='absolute inset-0 hidden md:grid md:grid-cols-3'>
+      <div className='absolute gap-0.5 inset-0 hidden md:grid md:grid-cols-3'>
         <div className='relative'>
           <Image
-            src={images[3]}
+            src={imagenes[0]}
             alt=''
             fill
             className='object-cover'
@@ -26,7 +43,7 @@ export const ObraFondoTexto = () => {
 
         <div className='relative'>
           <Image
-            src={images[1]}
+            src={imagenes[1]}
             alt=''
             fill
             quality={100}
@@ -36,7 +53,7 @@ export const ObraFondoTexto = () => {
 
         <div className='relative'>
           <Image
-            src={images[2]}
+            src={imagenes[2]}
             alt=''
             fill
             className='object-cover'
@@ -50,13 +67,8 @@ export const ObraFondoTexto = () => {
       {/* Texto */}
       <div className='relative z-10 flex h-full items-center p-6 justify-end'>
         <div className='max-w-sm text-white'>
-          <h2 className='text-2xl md:text-3xl font-bold'>Título</h2>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Tempora dolore sequi repudiandae dicta aliquam eligendi
-            quas praesentium. Sequi, nulla velit repudiandae optio
-            atque, ducimus, non nihil minima odio porro eos?
-          </p>
+          <h2 className='text-2xl md:text-3xl font-bold'>{title}</h2>
+          <p>{description}</p>
         </div>
       </div>
     </div>

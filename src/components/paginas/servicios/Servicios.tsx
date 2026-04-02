@@ -25,7 +25,7 @@ const servicios = [
 
 export const Servicios = () => {
   return (
-    <div className='h-[50vh] grid grid-cols-1 md:grid-cols-2 gap-0.5'>
+    <div className='min-h-[50vh] grid grid-cols-1 md:grid-cols-2 gap-0.5'>
       {servicios.map(({ titulo, descripcion, imagen }, i) => (
         <Servicio
           title={titulo}
