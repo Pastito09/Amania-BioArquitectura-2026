@@ -2,17 +2,17 @@ import Image from 'next/image';
 
 export const Nosotros = () => {
   return (
-    <div className='md:h-[40vh] h-auto w-full flex flex-col-reverse md:flex-row  my-2 '>
+    <div className='md:h-[40vh] h-auto w-full flex flex-col-reverse md:flex-row ms-0.5 my-2 '>
       <div>
         <Image
-          src='/techoCasa2.jpeg'
+          src='/Umepay_Aldea/aldea15.jpg'
           alt=''
           width={800}
           height={200}
         />
       </div>
       <div className='flex flex-col text-2xl gap-1 text-center text-gray-600'>
-        <h2 className='my-5 text-5xl'>Sobre Nosotros</h2>
+        <h2 className='my-5 text-5xl'>NOSOTROS</h2>
         <p className='text-lg text-gray-600 '>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex
           numquam a ipsum cum aperiam sequi asperiores fuga eaque

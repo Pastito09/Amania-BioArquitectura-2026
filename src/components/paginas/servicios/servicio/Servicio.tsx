@@ -35,7 +35,7 @@ export const Servicio = ({
             e.stopPropagation();
             setOpen(!open);
           }}
-          className='mt-3 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition duration-300 border border-white px-4 py-1 text-sm'
+          className='mt-3 opacity-100 md:opacity-0 md:group-hover:opacity-100 rounded-sm transition duration-300 border border-white px-4 py-1 text-sm'
         >
           Ver más
         </button>

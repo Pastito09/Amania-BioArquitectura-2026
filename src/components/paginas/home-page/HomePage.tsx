@@ -96,18 +96,18 @@ import { Autoplay, EffectFade } from 'swiper/modules';
 const slides = [
   {
     img: '/techoCasa2.jpeg',
-    title: 'Construcción Sustentable',
-    desc: 'Diseñamos espacios eficientes y ecológicos',
+    title: 'CONSTRUCCIÓN SUSTENTABLE',
+    desc: 'DISEÑAMOS ESPACIOS EFICIENTES Y ECOLÓGICOS',
   },
   {
     img: '/obras/Obras4.jpeg',
-    title: 'Diseño Interior',
-    desc: 'Ambientes cálidos y funcionales',
+    title: 'DISEÑO INTERIOR',
+    desc: 'ABIENTES CÁLIDOS Y FUNCIONALES',
   },
   {
     img: '/obras/Obras5.jpeg',
-    title: 'Arquitectura Natural',
-    desc: 'Materiales nobles y técnicas modernas',
+    title: 'TÉCNICAS CONSTRUCTIVAS',
+    desc: 'MATERIALES NOBLES Y TÉCNICAS MODERNAS',
   },
 ];
 

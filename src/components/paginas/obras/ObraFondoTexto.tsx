@@ -1,12 +1,5 @@
 import Image from 'next/image';
 
-const images = [
-  '/techoCasa2.jpeg',
-  '/obras/Obras1.jpeg',
-  '/obras/Obras2.jpeg',
-  '/obras/Obras3.jpeg',
-];
-
 interface ObraFondoTextoProps {
   title: string;
   description: string;

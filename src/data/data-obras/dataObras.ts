@@ -9,7 +9,7 @@ interface Obra {
 export const dataObras: Obra[] = [
   {
     id: 1,
-    title: 'San José',
+    title: 'SAN JOSÉ',
     description:
       'lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora dolore sequi repudiandae dicta aliquam eligendi quas praesentium. Sequi, nulla velit repudiandae optio atque, ducimus, non nihil minima odio porr    o eos?',
     imagenes: [
@@ -22,7 +22,7 @@ export const dataObras: Obra[] = [
   },
   {
     id: 2,
-    title: 'Acacias',
+    title: 'ACACIAS',
     description:
       'lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora dolore sequi repudiandae dicta aliquam eligendi quas praesentium. Sequi, nulla velit repudiandae optio atque, ducimus, non nihil minima odio porr    o eos?',
     imagenes: [
@@ -40,7 +40,7 @@ export const dataObras: Obra[] = [
   },
   {
     id: 3,
-    title: 'Aldea',
+    title: 'ALDEA',
     description:
       'lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora dolore sequi repudiandae dicta aliquam eligendi quas praesentium. Sequi, nulla velit repudiandae optio atque, ducimus, non nihil minima odio porr    o eos?',
     imagenes: [

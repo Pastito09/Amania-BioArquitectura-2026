@@ -2,24 +2,24 @@ import { Servicio } from './servicio/Servicio';
 
 const servicios = [
   {
-    titulo: 'Arquitectura',
+    titulo: 'ARQUITECTURA',
     descripcion: 'Diseño de espacios únicos',
-    imagen: '/techoCasa2.jpeg',
+    imagen: '/Umepay_Aldea/aldea10.jpg',
   },
   {
-    titulo: 'BioConstrucción',
+    titulo: 'BIOCONSTRUCCIÓN',
     descripcion: 'Materiales sustentables',
-    imagen: '/techoCasa.jpeg',
+    imagen: '/Umepay_Aldea/aldea9.jpg',
   },
   {
-    titulo: 'Interiorismo',
+    titulo: 'PLANOS Y PROYECTOS',
     descripcion: 'Estética y funcionalidad',
-    imagen: '/interiorCasa.jpeg',
+    imagen: '/Umepay_Aldea/aldea22.jpg',
   },
   {
-    titulo: 'Paisajismo',
+    titulo: 'PAISAJISMO',
     descripcion: 'Conexión con la naturaleza',
-    imagen: '/mesaYTecho.png',
+    imagen: '/Umepay_Aldea/aldea30.jpg',
   },
 ];
 
