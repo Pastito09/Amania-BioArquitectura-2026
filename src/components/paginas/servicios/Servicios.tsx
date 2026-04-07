@@ -2,23 +2,41 @@ import { Servicio } from './servicio/Servicio';
 
 const servicios = [
   {
-    titulo: 'ARQUITECTURA',
-    descripcion: 'Diseño de espacios únicos',
+    titulo: 'BIOARQUITECTURA',
+    descripcion: [
+      'Proyectos',
+      'Documentación de obra',
+      'Planos municipales',
+      'Técnicas constructivas con materiales naturales',
+    ],
     imagen: '/Umepay_Aldea/aldea10.jpg',
   },
   {
-    titulo: 'BIOCONSTRUCCIÓN',
-    descripcion: 'Materiales sustentables',
+    titulo: 'BIOCLIMÁTICA',
+    descripcion: [
+      'Asesoramiento',
+      'Sistemas de calefacción a leña',
+      'Sistemas de calefacción solar pasiva',
+      'Sistemas de refrigeración por convección',
+    ],
     imagen: '/Umepay_Aldea/aldea9.jpg',
   },
   {
-    titulo: 'PLANOS Y PROYECTOS',
-    descripcion: 'Estética y funcionalidad',
+    titulo: 'CONSTRUCCIÓN',
+    descripcion: [
+      'Construcción “LLave en mano”',
+      'Conducción técnica de obra',
+      'Administración de obra',
+    ],
     imagen: '/Umepay_Aldea/aldea22.jpg',
   },
   {
-    titulo: 'PAISAJISMO',
-    descripcion: 'Conexión con la naturaleza',
+    titulo: 'RELEVAMIENTOS',
+    descripcion: [
+      'Relevamiento de obra construida',
+      'Presentación de planos',
+      'Gestiones en el municipio y en el colegio de arquitectos',
+    ],
     imagen: '/Umepay_Aldea/aldea30.jpg',
   },
 ];

@@ -58,9 +58,9 @@ export const ObraFondoTexto = ({
       <div className='absolute inset-0 bg-black/30' />
 
       {/* Texto */}
-      <div className='relative z-10 flex h-full items-center p-6 justify-end'>
-        <div className='max-w-sm text-white'>
-          <h2 className='text-2xl md:text-3xl font-bold'>{title}</h2>
+      <div className='relative z-10 flex h-full items-end p-6 justify-end'>
+        <div className='max-w-sm text-white text-center'>
+          <h2 className='text-2xl md:text-3xl  font-bold'>{title}</h2>
           <p>{description}</p>
         </div>
       </div>

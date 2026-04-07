@@ -1,90 +1,3 @@
-// // import Image from 'next/image';
-// import Image from 'next/image';
-// import HomePageSlider from './HomePageSlider';
-
-// export const HomePage = () => {
-//   return (
-//     <div className='grid grid-cols-1 md:grid-cols-3 my-2 gap-2 '>
-//       <div className='col-span-1'>
-//         {/*slider-container*/}
-//         {/* <Image
-//           src={'/interiorCasa.jpeg'}
-//           width={550}
-//           height={550}
-//           alt='Logo Amania Bio-Arquitectura'
-//           className='object-cover px-1 md:px-0'
-//           quality={100}
-//           priority={true}
-//         /> */}
-//         <HomePageSlider />
-//       </div>
-
-//       <div className='text-gray-600 font-light ms-4 mt-5 me-5 col-span-2 '>
-//         <h1 className='text-2xl mt-6'>Amania Bioarquitectura</h1>
-//         <p className='mt-2'>
-//           <span className='ms-5'>La </span> bioarquitectura es aquella
-//           arquitectura en armonía con las personas y con el entorno
-//           natural y que se inspira, recupera y mejora técnicas
-//           tradicionales.
-//         </p>
-//         <p className='mt-2'>
-//           La arquitectura es arte al servicio de las personas y del
-//           planeta. Desde que el ser humano habita en este mundo,
-//           existe la arquitectura.
-//         </p>
-//         <p className='mt-2'>
-//           Y creemos que el papel que juega la arquitectura es vital
-//           para asegurar un futuro sano de la sociedad y del planeta.
-//         </p>
-//         <p className='mt-2'>
-//           Somos conscientes de que muchas de las nuevas técnicas de
-//           construcción, implican una alta demanda de energía y que por
-//           lo general sobrepasan la capacidad de renovación de los
-//           recursos naturales, suponiendo un desequilibrio para los
-//           ecosistemas.
-//         </p>
-//         <p className='mt-2'>
-//           Por eso, y frente a esta realidad, optamos por la
-//           bioarquitectura como forma de hacer arquitectura. Una
-//           arquitectura que se sustenta en principios naturales y donde
-//           edificación y ecosistema se integran de forma equilibrada.
-//         </p>
-//         <p className='mt-2'>
-//           Buscamos que las construcciones respeten el estado natural
-//           del medio ambiente y del lugar, utilizando los recursos con
-//           coherencia de la forma más sostenible posible y que generen
-//           espacios saludables para las personas.
-//         </p>
-//         <p className='mt-2'>
-//           Para crear espacios en armonía con las personas debemos
-//           pensar en generar{' '}
-//           <span className='font-semibold'>espacios sanos</span>, y
-//           atmosferas que creen emociones positivas.
-//         </p>
-//         {/* <p className='mt-2'>
-//           <span>
-//             <span className='ms-5'>Lorem</span> ipsum dolor sit amet
-//             consectetur adipisicing elit. Ipsa nisi quae quam fuga
-//             sapiente culpa voluptatem nobis, distinctio fugiat velit,
-//             iste eaque adipisci corporis non molestiae. Cupiditate
-//             sapiente asperiores obcaecati.
-//           </span>
-//         </p> */}
-//         <div className='mt-18 mb-2 hidden md:block'>
-//           <Image
-//             src={'/favicon.ico.png'}
-//             alt='Logo'
-//             height={100}
-//             width={100}
-//             className='mx-auto object-center self-end logo'
-//           />
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default HomePage;
 'use client';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -93,30 +6,56 @@ import 'swiper/css/effect-fade';
 import Image from 'next/image';
 import { Autoplay, EffectFade } from 'swiper/modules';
 
-const slides = [
+const positionClasses: Record<string, string> = {
+  'left-top': 'items-start justify-start text-left',
+  'left-center': 'items-start justify-center text-left ps-12',
+  'left-bottom': 'items-start justify-end text-left',
+
+  'center-top': 'items-center justify-start text-center pt-4',
+  'center-center': 'items-center justify-center text-center',
+  'center-bottom': 'items-center justify-end text-center',
+
+  'right-top': 'items-end justify-start text-right',
+  'right-center': 'items-end justify-center text-right pe-6',
+  'right-bottom': 'items-end justify-end text-right',
+};
+
+interface SlideProps {
+  img: string;
+  description: string;
+  position: string;
+  textColor: string;
+}
+
+const slides: SlideProps[] = [
   {
-    img: '/techoCasa2.jpeg',
-    title: 'CONSTRUCCIÓN SUSTENTABLE',
-    desc: 'DISEÑAMOS ESPACIOS EFICIENTES Y ECOLÓGICOS',
+    img: '/Umepay_Acacias/acacias6.jpg',
+    description:
+      'HOGARES SALUDABLES PARA UNA VIDA SANA Y EN CONTACTO CON LA NATURALEZA',
+    position: 'right-center',
+    textColor: 'text-white',
   },
   {
-    img: '/obras/Obras4.jpeg',
-    title: 'DISEÑO INTERIOR',
-    desc: 'ABIENTES CÁLIDOS Y FUNCIONALES',
+    img: '/Umepay_Aldea/aldea20.jpg',
+    description: 'MATERIALES NATURALES PARA TU CONFORT Y BIENESTAR',
+    position: 'left-center',
+    textColor: 'text-white',
   },
   {
-    img: '/obras/Obras5.jpeg',
-    title: 'TÉCNICAS CONSTRUCTIVAS',
-    desc: 'MATERIALES NOBLES Y TÉCNICAS MODERNAS',
+    img: '/San_Jose/sanjose3.jpg',
+    description:
+      'DISEÑO SUSTENTABLE EFICIENCIA ENERGÉTICA CUIDANDO LOS RECURSOS NATURALES',
+    position: 'center-top',
+    textColor: 'text-black',
   },
 ];
 
 export const HomePage = () => {
   return (
-    <div className='relative w-full h-[85vh]'>
+    <div className='relative w-full h-[65vh] md:h-[85vh] px-0.5'>
       <Swiper
         autoplay={{
-          delay: 5500,
+          delay: 5000,
           disableOnInteraction: false,
         }}
         speed={2000}
@@ -132,10 +71,10 @@ export const HomePage = () => {
               {/* Imagen de fondo */}
               <Image
                 src={slide.img}
-                alt={slide.title}
+                alt={slide.description}
                 fill
                 quality={100}
-                className='object-cover'
+                className='md:object-fit object-cover h-full w-full'
                 priority={i === 0}
               />
 
@@ -143,12 +82,13 @@ export const HomePage = () => {
               <div className='absolute inset-0 bg-black/10 rounded-md z-10' />
 
               {/* Texto */}
-              <div className='absolute inset-0 z-20 flex flex-col items-center justify-center text-center text-white px-4 mb-48'>
-                <h1 className='text-4xl md:text-6xl font-bold'>
-                  {slide.title}
-                </h1>
-                <p className='mt-4 text-lg md:text-xl max-w-xl'>
-                  {slide.desc}
+              <div
+                className={`absolute inset-0 z-20 flex flex-col items-center justify-center text-center px-4 py-1 ${
+                  positionClasses[slide.position]
+                } ${slide.textColor}`}
+              >
+                <p className='mt-4 text-2xl md:text-5xl max-w-xl text-center shadow-lg'>
+                  {slide.description}
                 </p>
               </div>
             </div>

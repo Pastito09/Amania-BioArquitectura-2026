@@ -11,7 +11,7 @@ export default function Home() {
         <HomePage />
       </div>
 
-      <div id='nosotros'>
+      <div id='nosotros ' className='mb-2 '>
         <Nosotros />
       </div>
       <div id='servicios' className='p-1 mt-2'>

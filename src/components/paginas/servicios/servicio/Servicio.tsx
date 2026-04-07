@@ -4,7 +4,7 @@ import { useState } from 'react';
 
 interface ServicioProps {
   title: string;
-  description: string;
+  description: string[];
   image: string;
 }
 
@@ -42,13 +42,19 @@ export const Servicio = ({
 
         {/* descripción animada */}
         <div
-          className={`origin-top transform transition-all duration-300 ${
+          className={`origin-top transform transition-all duration-300 overflow-hidden ${
             open
-              ? 'scale-y-100 opacity-100 mt-3'
-              : 'scale-y-0 opacity-0'
+              ? 'scale-y-100 opacity-100 max-h-40 mt-3'
+              : 'scale-y-0 opacity-0 max-h-0'
           }`}
         >
-          <p className='text-sm'>{description}</p>
+          <div className='flex flex-col gap-1 mt-2'>
+            {description.map((desc) => (
+              <p key={desc} className='text-sm'>
+                {desc}
+              </p>
+            ))}
+          </div>
         </div>
       </div>
     </div>
